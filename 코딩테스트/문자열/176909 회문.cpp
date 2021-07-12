@@ -17,7 +17,7 @@ int main(){
 			if(ch[start]==ch[end]){
 				continue;
 			}else if(state==0){
-				if(ch[start]==ch[end-1]){
+				if(ch[start]==ch[end-1]){ // aaabaabaa 반례 발생
 					end--; 
 					state=1;
 					continue;
